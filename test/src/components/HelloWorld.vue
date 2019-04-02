@@ -80,17 +80,20 @@
         </a>
       </li>
     </ul>
+    <Header/>
     <Todos v-bind:todos="todos" v-on:del-todo="deleteTodo"/>
   </div>
 </template>
 
 <script>
 import Todos from './Todos'
+import Header from './Header'
 
 export default {
   name: 'HelloWorld',
   components: {
-    Todos
+    Todos,
+    Header
   },
   data () {
     return {
